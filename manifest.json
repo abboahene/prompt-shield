@@ -3,6 +3,14 @@
   "name": "Prompt Safe - PII Shield",
   "version": "1.0",
   "description": "Real-time privacy warnings for your AI prompts. Like Grammarly, but for security.",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "action": {
+    "default_icon": "logo.png"
+  },
   "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
@@ -22,7 +30,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["styles.css"],
+      "resources": ["styles.css", "logo.png"],
       "matches": ["<all_urls>"]
     }
   ]
