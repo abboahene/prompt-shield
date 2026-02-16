@@ -258,6 +258,24 @@ function updatePosition() {
     container.style.left = `${left}px`;
 }
 
+const disgustMessages = [
+    "Oh come on!!",
+    "Are you serious?",
+    "Not again...",
+    "Seriously?",
+    "Uh oh!",
+    "Stop that!",
+    "Nooooo!",
+    "Really?",
+    "Why would you do that?",
+    "Come on, be better!",
+    "My eyes!!",
+    "Privacy is a thing, you know?",
+    "Let's keep some secrets, shall we?",
+    "Yikes!",
+    "Bruh..."
+];
+
 function updateShield(target, findings) {
     if (!activeShield || activeShield.targetRef !== target) {
         createShieldUI(target);
@@ -277,7 +295,10 @@ function updateShield(target, findings) {
         shieldIcon.className = 'ps-extension-shield ps-danger'; // Red pill
         statusElement.innerHTML = count > 9 ? '9+' : count;
 
+        const disgust = disgustMessages[Math.floor(Math.random() * disgustMessages.length)];
+
         let html = `
+            <div class="ps-disgust-banner">${disgust}</div>
             <div class="ps-extension-header">
                 <span>Security Alert</span>
                 <div style="display:flex; align-items:center;">

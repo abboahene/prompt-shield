@@ -83,6 +83,18 @@
     align-items: center;
 }
 
+.ps-disgust-banner {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
 .ps-extension-list {
     max-height: 200px;
     overflow-y: auto;
