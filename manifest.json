@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PromptShield - PII Protection",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Real-time privacy warnings for your AI prompts. Like Grammarly, but for security.",
   "icons": {
     "16": "images/logo-16.png",
